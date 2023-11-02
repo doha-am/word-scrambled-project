@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Word Scramble Game</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div id="container">
+    <h2>Word Scramble</h2>
+    <div class="content">
+      <p id="scrambleWord"></p>
+      <div class="details">
+        <p>Hint: <span id="hint"></span></p>
+        <p>Time Left: <b id="timer">100</b>s</p>
+      </div>
+      <input type="text" spellcheck="false" placeholder="Enter a valid word" id="inputWord" autocomplete="off" />
+      <div class="buttons">
+        <button id="refreshWord">Refresh Word</button>
+        <button id="checkWord">Check Word</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="messege" class="hide">
+    <div class="card text-center mb-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa-solid fa-square-check" style="color: darkgreen; font-size: 50px;"></i>
+        </h5>
+        <p class="card-text" style="font-size: larger;">Congratulation! Correct ansewer </p>
+        <a href="#" class="btn btn-success" id="button">Continue</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="messege2" class="hide">
+    <div class="card text-center mb-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa-solid fa-square-xmark" style="color:crimson; font-size: 50px;"></i>
+        </h5>
+        <p class="card-text" style="font-size: larger;">OPPS! Wrong ansewer </p>
+        <a href="#" class="btn btn-danger" id="button1">Try again</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/words.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
